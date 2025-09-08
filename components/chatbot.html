@@ -1,0 +1,26 @@
+<!-- frontend/components/chatbot.html -->
+<!-- 🔹 AI Chatbot Widget -->
+<button id="chatbotToggle" class="chatbot-button" aria-label="Open AI Chatbot">
+  <i class="bi bi-chat-dots"></i>
+</button>
+
+<div id="chatbotWindow" class="chatbot-window shadow-lg">
+  <!-- Header -->
+  <div class="chatbot-header d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-robot"></i> AI Assistant</span>
+    <button id="chatbotClose" class="btn-close btn-close-white" aria-label="Close"></button>
+  </div>
+
+  <!-- Messages -->
+  <div id="chatbotMessages" class="chatbot-messages">
+    <div class="text-muted small text-center mt-3">👋 Hi! How can I help you today?</div>
+  </div>
+
+  <!-- Input -->
+  <div class="chatbot-input d-flex">
+    <input id="chatbotInput" type="text" class="form-control border-0" placeholder="Ask me anything..." aria-label="Chatbot input">
+    <button id="chatbotSend" class="btn btn-primary">
+      <i class="bi bi-send"></i>
+    </button>
+  </div>
+</div>
